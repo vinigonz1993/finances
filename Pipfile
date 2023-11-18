@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 django-rest-framework-nested = "*"
 flake8 = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
