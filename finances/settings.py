@@ -71,9 +71,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'finances.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'common.pagination.CustomPagination',
+    'PAGE_SIZE': 100
+}
 
 DATABASES = {
     'default': {
