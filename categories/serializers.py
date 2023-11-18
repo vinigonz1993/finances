@@ -11,7 +11,8 @@ class CategorySerializer(serializers.Serializer):
     def to_representation(self, instance):
         return {
             "uuid": instance.uuid,
-            "name": instance.name
+            "name": instance.name,
+            "color": instance.color
         }
 
     def validate_name(self, data):
